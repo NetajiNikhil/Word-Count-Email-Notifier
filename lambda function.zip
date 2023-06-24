@@ -1,0 +1,4 @@
+import functools as ft
+f=open("test_file.txt")
+words=ft.reduce(lambda a,b:(len(a.split())+len(b.split())),f.readlines())
+print(words)
